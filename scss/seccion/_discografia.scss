@@ -1,0 +1,16 @@
+.albums {
+  @extend %grid;
+  div{
+    @include card (60%);
+  }
+}
+@media (min-width: 768px) {
+  .albums {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .albums {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

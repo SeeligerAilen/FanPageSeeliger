@@ -1,0 +1,42 @@
+%grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+@mixin card ($width) {
+  background-color: $rojito;
+  border-radius: 25px;
+  height: 400px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  h3{
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+  p{
+    padding: 10px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;
+    overflow: auto;
+  }
+  ol{
+    padding: 15px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #fff;
+    overflow: auto;
+  }
+  img{
+    width: $width;
+    filter: grayscale(1);
+    padding: 10px;
+    &:hover {
+      filter: grayscale(0);
+      transform: scale(1.2);
+    }
+  }
+}

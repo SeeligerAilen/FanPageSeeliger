@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    a{
+        color: #fff;
+    }
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+@import './variables/colores.scss';
+@import './variables/extend.scss';
+@import './seccion/header';
+@import './seccion/footer.scss';
+@import './seccion/inicio';
+@import './seccion/historia';
+@import './seccion/discografia';
+@import './seccion/show';
+@import './seccion/subs';

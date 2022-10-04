@@ -1,0 +1,43 @@
+.header {
+  background-color: $rojo;
+  color: $dorado;
+  display: flex;
+  flex-direction: column;
+  h1 {
+    padding-bottom: 10px;
+    color: $dorado;
+    text-align: center;
+  }
+  &__nav {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    &--active{
+      font-weight: 900;
+    }
+    a {
+      color: #fff;
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+  }
+}
+.headerIndex {
+  background-image: url(../img/pimpinela.png);
+  background-size: cover;
+  height: 300px;
+  justify-content: space-between;
+}
+
+@media (min-width: 768px) {
+  .header {
+    &__nav {
+      flex-direction: row;
+      /* justify-content: space-evenly; */
+    }
+  }
+}
+

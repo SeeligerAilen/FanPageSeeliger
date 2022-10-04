@@ -1,0 +1,13 @@
+.subs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__contenedor{
+        label {
+            display: block;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

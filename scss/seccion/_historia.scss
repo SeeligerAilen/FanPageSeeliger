@@ -1,0 +1,41 @@
+.historias {
+  @extend %grid;
+  div {
+    @include card(50%);
+  }
+}
+.entrevistas {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-bottom: 10px;
+  h3 {
+    text-align: center;
+    padding: 10px;
+  }
+  &__video {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .historias {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .historias {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .entrevistas {
+    &__video {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+    }
+  }
+}
